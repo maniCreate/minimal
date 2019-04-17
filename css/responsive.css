@@ -1,0 +1,177 @@
+
+
+@media screen and (max-width: 1100px) {
+
+  header #top-content .scroll {
+    transform: scale(0.5);
+  }
+
+  #left-content {
+      width: 50px;
+      padding: 0;
+      border-right: none;
+      height: 100%;
+      position: fixed;
+      z-index: 10000;
+  }
+
+  #left-content label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+
+  #left-content > label,
+  #left-content > #menu-text {
+      display: block;
+      z-index: 10001;
+  }
+  #left-content-inner #menu ul li a {
+      font-size: 12px;
+  }
+
+  #left-content:after {
+    display: none;
+  }
+
+  #left-content-inner {
+    display: block;
+    position: fixed;
+    z-index: 0;
+    width: 0%;
+    height: 100%;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #fff;
+    animation: close-sp-menu 0.3s ease-in-out forwards;
+  }
+
+  #left-content input:checked ~ #left-content-inner {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    animation: open-sp-menu 0.3s ease-in-out forwards;
+  }
+
+
+  #left-content #sns-btn {
+    bottom: 100px;
+  }
+
+
+  .close-sp-menu {
+      animation: close-sp-menu 0.3s ease-in-out forwards;
+  }
+
+
+  @keyframes open-sp-menu {
+    0% {
+      width: 0%;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes close-sp-menu {
+    0% {
+      width: 100%;
+      opacity: 1;
+    }
+    100% {
+      width: 0%;
+      opacity: 0;
+    }
+  }
+
+  #left-content-bar {
+    display: none;
+  }
+
+  #left-content #menu-text {
+    position: absolute;
+    width: 1vw;
+    top: 0;
+    left: 50px;
+    right: 10px;
+    bottom: 0;
+    text-align: center;
+    writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+    letter-spacing: 0;
+  }
+
+  #left-content #menu-text span {
+      font-size: 10px;
+      font-family: baskerville-urw,serif;
+  }
+
+  #left-content #menu-text #menu-text-margin {
+    padding: 10px;
+  }
+
+
+  #right-content {
+      margin-left: 50px;
+  }
+  .section-margin {
+    margin-bottom: 30px;
+    padding: 30px 20px;
+  }
+  .flex {
+    display: block;
+  }
+
+  #profile {
+    margin-top: 30px;
+  }
+
+  #profile-right {
+    display: none;
+  }
+
+  #right-content #profile #profile-left #profile-box #job{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #right-content #profile #profile-left #profile-box #description{
+    margin: 30px 0;
+    letter-spacing: 2px;
+  }
+  #right-content #profile #profile-left #sp-profile-image{
+    display: block;
+    width: 100%;
+  }
+  #right-content #profile #profile-left #sp-profile-image img {
+    max-width: 300px;
+  }
+
+  #right-content .content-bg {
+    transform: scale(0.6);
+    right: -80px;
+  }
+}
+
+@media screen and (min-color-index:0)
+and(-webkit-min-device-pixel-ratio:0) { @media
+{
+  #left-content-inner #menu ul li a {
+      font-size: 12px;
+  }
+}}
